@@ -39,6 +39,7 @@ body{
 
 h1,h2,h3,h4{
     font-family: var(--fuenteHeading);
+    line-height: 1.2;
 
 }
 
@@ -98,7 +99,11 @@ img{
 }
 
 .barra{
-    @media (min-width: 768px) { 
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px) { 
+        .barra{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -169,6 +174,55 @@ img{
 
 .boton--primario{
     background-color: var(--negro);
+}
+
+.boton--secundario{
+    background-color: var(--primario);
+}
+
+.cursos{
+    list-style: none;
+}
+
+.widget-curso{
+    border-bottom: 1px solid var(--claro);
+    margin-bottom: 2rem;
+}
+
+.widget-curso:last-of-type{
+    border: none;
+    margin-bottom:0; 
+}
+
+.widget-curso__label{
+ font-family: var(--fuenteHeading);
+ font-weight: bold;
+}
+
+.widget-curso__info{
+   font-weight: normal;
+}
+
+.widget-curso__label,.widget-curso__label{
+    font-size: 2rem;
+}
+
+.footer{
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+/*sobre nosotros*/
+
+@media (min-width: 768px) { 
+    .sobre-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+  
 }
 
 
