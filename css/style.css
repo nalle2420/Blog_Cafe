@@ -164,12 +164,18 @@ img{
     text-transform: uppercase; /*convertir texto en mayuscula*/
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
+
 }
 
 @media (min-width: 768px) { 
     .boton{
         display: inline-block;
     }
+}
+
+.boton:hover{
+    cursor: pointer;
 }
 
 .boton--primario{
@@ -225,4 +231,70 @@ img{
   
 }
 
+/*cursos*/
+
+.curso{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--claro);
+}
+@media (min-width: 768px) { 
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+.curso:last-of-type{
+    border-bottom: none;
+}
+
+.curso__label{
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+   }
+   
+   .curso__descripcion{
+      font-weight: normal;
+   }
+   
+   .widget-curso__info,.curso__label{
+       font-size: 2rem;
+   }
+
+/*Contacto*/
+.contacto-bg{
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+}
+
+.formulario{
+ background-color: var(--blanco);
+ margin: -5rem auto 0 auto;
+ width: 95%;
+ padding: 5rem;
+}
+
+.campo{
+ display: flex; 
+ margin-bottom: 2rem ;
+ gap: 2rem;
+
+}
+
+.campo__label{
+   flex: 0 0 9rem;
+   text-align: right;
+   font-weight: 700;
+}
+
+.campo__field{
+   flex: 1;
+   border: 1px solid var(--claro);
+}
+
+.campo_field--textarea{
+  height: 20rem;
+}
 
